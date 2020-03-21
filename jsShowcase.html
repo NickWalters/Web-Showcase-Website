@@ -4,9 +4,26 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		
+		
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+		
+		<script src="assets/js/jsonExtract.js"></script>
+		
 		<title>CSS</title>
+		
+		<style>
+			.center {
+				margin: auto;
+				width: 50%;
+				border: 3px solid green;
+				padding: 10px;
+			}
+		</style>
 	</head>
 	<body class="jsShowcase">
 		<section id="main">
@@ -21,6 +38,19 @@
 						<h2>Building Blocks of the Web: Javascript</h2>
 						<p>Understanding the powerhouse of the Web</p>
 					</header>
+					
+						
+					<div class="center">
+						<h1>Weather in Perth City</h1>
+
+						<div>
+							<button type="button" onclick="loadJSON()">Show Information </button>
+						</div>
+						<div id ="name"></div>
+						<div id="air_temp"></div>
+						
+				   </div>
+			
 			
 			</div>
 		</section>
