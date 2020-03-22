@@ -13,17 +13,43 @@
 		
 		
 		<script src="assets/js/jsonExtract.js"></script>
+		<script src="assets/js/moreDOM_Functions.js"></script>
+		<script src="assets/js/jsAnimationDVD.js"></script>
 		
-		<title>CSS</title>
+		<title>Javascript</title>
 		
 		<style>
 			.center {
 				margin: auto;
-				width: 50%;
-				border: 3px solid green;
+				width: 80%;
 				padding: 10px;
 			}
+			#container {
+				width: 400px;
+				height: 400px;
+				position: relative;
+				background: black;
+			}
+			#animate {
+				width: 50px;
+				height: 50px;
+				position: absolute;
+				background-color: red;
+				background-image: url("images/dvdLogo.png");
+			}
 		</style>
+		<div class="menu">	
+			<nav class="navibar">
+				<div class="container-fluid">
+					<ul class="navbar-nav">
+						<li><a href="home.html">HTML</a></li>
+						<li><a href="cssShowcase.html">CSS</a></li>
+						<li class="active"><a href="#">Javascript</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</head>
 	<body class="jsShowcase">
 		<section id="main">
@@ -39,18 +65,79 @@
 						<p>Understanding the powerhouse of the Web</p>
 					</header>
 					
-						
-					<div class="center">
-						<h1>Weather in Perth City</h1>
+				
+				<div class="center">
+				
+					<h3>Evolution of Javascript</h3>
+					<p>Marc Andreeseen founder of Netscape communications also had a vision where the web could become more dynamic with use of a scripting language that could easily interact with the DOM.
+					
+					<p>In May 1995, a man named Brendan Eich was employed by Netscape Communication to help create a 'language for the web' which is dynamic, powerful, reduce verbosity and a syntac thats easy to learn. A  finishedprototype was made in 10 days.<p>
+					
+					The language had become well known for its client-side development, however a server-sdide implementation of Javascript was released in December 1995 (Netscape Enterprise Serbver) </p>
+					
+					<p>There are many advantages and uses of Java that made it as popular as it is today. Some of these features may be its easy to understand Java like syntax, Functions as First-Objects, and a preference over Objects vs Primatives <p>
+					
+					<p>in 2005, a paper was released by Jesse James Garrett, explaining the technologies behind Javascript as the backbone of the web, introducing the term 'AJAX' as a way of building modern websites. Javascript became increasingly popular as a web language from these years, and is the standard used everywhere today.<p>
+					
+					<p>In 2000, the first popular JavaScript framework was released. It was called Dynamic HTML (DHTML). DHTML was used to make basic changes to web pages. The sort of changes you would make with CSS easily these days. DHTML was released in 2000.
 
-						<div>
-							<button type="button" onclick="loadJSON()">Show Information </button>
-						</div>
-						<div id ="name"></div>
-						<div id="air_temp"></div>
+					In 2006, a lot of frameworks and libraries were released. The most popular being jQuery. <p>
+					
+					<h3>Uses</h3>
+					<p>Javascript is a language that allows you to implement complex features on web pages that dynamically update. Such as displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video etc. It adds more functionality to HTML and CSS, because it acts as a 'information gatherer language' behind the scenes. When referring to 'behind the scenes' work, javascript can execute in the background to produce and event or display new HTML information after clicking a button for example</p>
+				</div>
+					
 						
+					<div style="background-color:lightyellow; border-style: solid" align="middle" class="center">
+						<hr class="rounded">
+					
+						<p>In the below example, we will use Javascript (AJAX) to gather recent information from the Australian Beaureu of Meteorology and Display the weather gathered from their database (Something that is impossible in HTML and CSS alone with their static viewing environment)<p>
+						<h1>Weather in Perth City</h1>
+						<p>Gathers weather information (around 5~secs)...</p>
+						<div>
+							<button type="button" onclick="loadJSON()">Update Information </button>
+						</div>
+						<p><strong>Location:</strong></p>
+						<div id ="name">~</div>
+						
+						<p><strong>Temperature: </strong></p>
+						<div id="air_temp">~</div>
+						
+						<p><strong>Date Recorded: </strong></p>
+						<div id="local_date_time">~</div>
+						<hr class="rounded">
 				   </div>
-			
+				
+				<hr class="rounded">
+				<div class="center">
+					<p id="textToChange" onmouseover="changeTextColour()">Using javascript, we can dynamically change the content displayed as HTML to us, whenever we do some sort of action like click a button or hover over something</p>
+					
+					<button type="button" onclick="changeText()">Change Website Text</button>
+					<button onclick="displayDate()">The time is?</button>
+					<p id="dateArea"></p>
+					
+					
+					
+					<hr class="rounded">
+					<h3>JavaScript Can Validate Input</h3>
+
+					<p>Please input a number between 1 and 300:</p>
+					<input id="numb">
+					<p id="thatText"></p> 
+					<button type="button" onclick="formValidationExample1()">Submit</button>
+					
+					
+					<hr class="rounded">
+					<h3>Animations in Javascript</h3>
+					<p><button onclick="myMove()">Make Animation</button></p>
+					<p><button onclick="removeAnimation()">Remove Logo (click x2)</button></p>
+
+					<div id ="container">
+						<div id ="animate"></div>
+					</div>
+					
+
+				</div>			
 			
 			</div>
 		</section>

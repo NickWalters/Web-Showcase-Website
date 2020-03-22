@@ -44,6 +44,18 @@
 				color: blue;
 			}
 		</style>
+		<div class="menu">	
+			<nav class="navibar">
+				<div class="container-fluid">
+					<ul class="navbar-nav">
+						<li><a href="home.html">HTML</a></li>
+						<li class="active"><a href="#">CSS</a></li>
+						<li><a href="jsShowcase.html">Javascript</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 	</head>
 	<body class="cssShowcase">
 		<section id="main">
@@ -60,41 +72,51 @@
 					</header>
 					
 					<div class="content">
+						<img src="https://lh3.googleusercontent.com/proxy/gv6ErEZR6sgXVhbdEV_GDPFkXywHiRlo2jvWlYiDN-n1K9NNvo8_bH7-ACtd3SzpSznzAGR5hh87hbHXrDg0P1SdiYHuycwIpa2BL6WGNx-wgA" class="center">
+						
 						<p>CSS stands for Cascading Style Sheets. It is a stylesheet language for the web, in which helps streamline the design process of websites and applications</p>
 						<p>CSS is used to specify the presentation (layout and style) of markup languages<p>
+						
+						<p>CSS is relatively easy to learn and produced much better and cleaner code than directly applying all the styles to HTML.</p>
+						
+						<p>By Modularising code, and modularising styling choices using CSS, you can seperate the functional elements of the website and the design elements of the website into two different files. Modular code allows for greater design consistency and easier maintenence. HTML structure and CSS presentation are seperate.</p>
+						
+						 <table style="width:100%">
+							<tr>
+								<th>Advantage</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>Easier to Maintain and Update</td>
+								<td>Changing one line of code in HTML doesnt apply to all classes/types associated to it. CSS shows design seperation and all the design choices can be viewed in a seperate file, making the switch between front-end development and backend work simple</td>
+							</tr>
+							<tr>
+								<td>More formatting Options</td>
+								<td>CSS provides added functionality to format elements on the screen correctly. While also allowing the developer to control presentation of pages, as to what is loaded first (text or graphics?) for example</td>
+							</tr>
+							<tr>
+								<td>Faster Download Times</td>
+								<td>Because there is SIGNIFICANTLY less code running on top of your web page, it helps the download speed. Because CSS is in a seperate file, all the information will be already cached in the browser</td>
+							</tr>
+						</table> 
 					
 					
 					<h2>Pseudo-Classes in CSS</h2>
 					<p>For this example, Psuedo classes in CSS allows you to style an element when a user mouses over it, style visited and unvisited links differently, and style and element when it gets focus</p>
 					<p>In CSS, applying styling to either all or specific elements are able to be done in a few simple lines of code: </p>
 					
-										<!-- Preformatted Code -->
-											<h3>CSS Code to apply color to all elements that have the same class</h3>
-<pre><code>
-button {
-	background-color: green;
-	color: white;
-	padding: 25px;
-	text-align: center;
-}
-
-.button:hover {
-	background-color: blue;
-}
-
-.buttonActions:hover{
-	background-color: orange;
-}
-</code></pre>
 					
-					<h4>Effect of applying CSS to ALL elements in a class<h4>
+								
+					<h4>Effect of applying CSS to ALL elements in a class</h4>
+					<p>Within this block of CSS code, we can save so much re-typing of HTML styles. Designing each element using HTML is very time consuming if you have many elements on a page. However with CSS, you are able to define colours, fonts, positions and styles all within one definition</p>
+					<p>Colors of the following 'div' elements have been defined in the .css file, as well as the actions involved</p>
 					<div class="colourDiv">
 						<ul class="buttonActions">
 							<li><a href="#" class="button">Button</a></li>
 						</ul>
 					</div>
 					
-					<pre><code>
+<pre><code>
 /* unvisited link */
 	a:link {
 	color: red;
@@ -110,8 +132,8 @@ button {
 	color: hotpink;
 }
 </code></pre>
-					<p><font size="3"> There is now a different colour for each state in a button/link.</font></p>
-					<p><font size="3">when you hover your mouse over the button (as shown earlier) or link (as shown below) the colour will change to a 'hotpink'</font></p>
+					<p><font size="3"> Following the code shown above, There is now a different colour for each state in a button/link. This code applies to ALL newly created links(type 'a' tags) if referenced properly, it will save tedious re-typing</font></p>
+					<p><font size="3">When you hover your mouse over the button or link (as shown below) the colour will change to a 'hotpink'</font></p>
 					<p><b><a href="http://teaching.csse.uwa.edu.au/units/CITS3403/projects/Project1.pdf" target="_blank">This is a link</a></b></p>
 			</div>
 		</section>

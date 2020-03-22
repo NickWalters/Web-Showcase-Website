@@ -13,6 +13,8 @@ function loadJSON() {
 			// be accessed as jsonObj.name and jsonObj.country.
 			document.getElementById("name").innerHTML = jsonObj.observations.data[0].name;
 			document.getElementById("air_temp").innerHTML = jsonObj.observations.data[0].air_temp;
+			document.getElementById("local_date_time").innerHTML = 
+				jsonObj.observations.data[0].local_date_time;
 		}
 	}
 
