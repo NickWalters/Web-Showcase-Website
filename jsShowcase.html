@@ -16,6 +16,7 @@
 		<script src="assets/js/jsonExtract.js"></script>
 		<script src="assets/js/moreDOM_Functions.js"></script>
 		<script src="assets/js/jsAnimationDVD.js"></script>
+		<script src="assets/js/covid19Info.js"></script>
 		
 		<title>Javascript</title>
 		
@@ -76,7 +77,7 @@
 					
 						<p>In the below example, we will use Javascript (AJAX) to gather recent information from the Australian Beaureu of Meteorology and Display the weather gathered from their database (Something that is impossible in HTML and CSS alone with their static viewing environment)<p>
 						<h1>Weather in Perth City</h1>
-						<p>Gathers weather information (around 5~secs)...</p>
+						<p>Gathers weather information (around ~5 secs)</p>
 						<div>
 							<button type="button" onclick="loadJSON()">Update Information </button>
 						</div>
@@ -90,6 +91,32 @@
 						<div id="local_date_time">~</div>
 						<hr class="rounded">
 				   </div>
+				
+				<div style="background-color:lightpink; border-style: solid" align="middle" class="center">
+					<hr class="rounded">
+					
+					<h1>COVID-19 Tracker</h1>
+					<p>Shows the amount of cases, and deaths of COVID-19 (Coronavirus) in our State of Western Australia</p>
+					<div>
+						<button type="button" onclick="loadCOVID19_JSON()">Update Information </button>
+					</div>
+					<p><strong>Country:</strong></p>
+					<div id ="country">~</div>
+					
+					<p><strong>State:</strong></p>
+					<div id ="province">~</div>
+					
+					<p><strong>Number of Cases: </strong></p>
+					<div id="confirmed">~</div>
+					
+					<p><strong>Deaths: </strong></p>
+					<div id="deaths">~</div>
+					
+					<p><strong>Date Recorded: </strong></p>
+					<div id="last_updated">~</div>
+					<hr class="rounded">
+				
+				</div>
 				
 				<hr class="rounded">
 				<div class="center">
