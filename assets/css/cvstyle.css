@@ -1,3 +1,4 @@
+/* ALLOW ALL/MOST ELEMENTS TO HAVE THE SAME CONSISTENT FORMAT */
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
 border:0;
 font:inherit;
@@ -7,6 +8,7 @@ padding:0;
 vertical-align:baseline;
 }
 
+/* Format footer, header and article of words in the middle of the screen block(s) */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
 }
@@ -22,6 +24,7 @@ p {
 	color: #444;
 }
 
+/* DEFINE THE CLASSES TO MANIPULATE AND CHANGE */
 #cv {
 	width: 90%;
 	max-width: 800px;
@@ -35,6 +38,7 @@ p {
 	background: #ededed;
 }
 
+/* THE STYLE OF HEADINGS */
 #name h1 {
 	font-size: 2.5em;
 	font-weight: 700;
@@ -52,6 +56,7 @@ p {
 	padding: 0 40px;
 }
 
+/*  PROFILE PICTURE ON THE SIDE OF THE SCREEN */
 #headshot {
 	width: 12.5%;
 	float: left;
@@ -65,6 +70,7 @@ p {
 	border-radius: 50px;
 }
 
+/* DEFINE WHERE MY INFORMATION IS DISPLAYED */
 #name {
 	float: left;
 }
@@ -141,6 +147,7 @@ section:last-child {
 	margin-bottom: 3px;
 }
 
+/* GET A TABLE FROM WEBKIT, AND DISPLAY MY SKILLS */
 .keySkills {
 	list-style-type: none;
 	-moz-column-count:3;
@@ -153,78 +160,6 @@ section:last-child {
 
 .keySkills ul li {
 	margin-bottom: 3px;
-}
-
-@media all and (min-width: 602px) and (max-width: 800px) {
-	#headshot {
-		display: none;
-	}
-	
-	.keySkills {
-	-moz-column-count:2;
-	-webkit-column-count:2;
-	column-count:2;
-	}
-}
-
-@media all and (max-width: 601px) {
-	#cv {
-		width: 95%;
-		margin: 10px auto;
-		min-width: 280px;
-	}
-	
-	#headshot {
-		display: none;
-	}
-	
-	#name, #contactDetails {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-	
-	.sectionTitle, .sectionContent {
-		float: none;
-		width: 100%;
-	}
-	
-	.sectionTitle {
-		margin-left: -2px;
-		font-size: 1.25em;
-	}
-	
-	.keySkills {
-		-moz-column-count:2;
-		-webkit-column-count:2;
-		column-count:2;
-	}
-}
-
-@media all and (max-width: 480px) {
-	.mainDetails {
-		padding: 15px 15px;
-	}
-	
-	section {
-		padding: 15px 0 0;
-	}
-	
-	#mainArea {
-		padding: 0 25px;
-	}
-
-	
-	.keySkills {
-	-moz-column-count:1;
-	-webkit-column-count:1;
-	column-count:1;
-	}
-	
-	#name h1 {
-		line-height: .8em;
-		margin-bottom: 4px;
-	}
 }
 
 @media print {
@@ -296,6 +231,7 @@ section:last-child {
 	}
 }
 
+/* DEFINE THE DIFFERENT TYPES OF FADING ANIMATIONS */
 .instaFade {
     -webkit-animation-name: reset, fade-in;
     -webkit-animation-duration: 1.5s;
@@ -323,7 +259,10 @@ section:last-child {
     animation-duration: 2.5s;
     animation-timing-function: ease-in;
 }
+
+/* DEFINITION OF ANIMATION CLASSES */
  
+/* first portion of page load first */
 .delayOne {
 	-webkit-animation-delay: 0, .5s;
 	-moz-animation-delay: 0, .5s;
@@ -336,6 +275,7 @@ section:last-child {
 	animation-delay: 0, 1s;
 }
 
+/* show the middle portions after first */
 .delayThree {
 	-webkit-animation-delay: 0, 1.5s;
 	-moz-animation-delay: 0, 1.5s;
@@ -348,6 +288,7 @@ section:last-child {
 	animation-delay: 0, 2s;
 }
 
+/* show the last portions of the page */
 .delayFive {
 	-webkit-animation-delay: 0, 2.5s;
 	-moz-animation-delay: 0, 2.5s;
